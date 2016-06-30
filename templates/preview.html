@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Preview{% endblock %}
+{% block content %}
+    <h1 class="pure-u-1">Short 'n Sweet</h1>
+    <h3 class="pure-u-1">Here's your Short 'n Sweet link:</h3>
+
+    <div class="pure-u-1 pure-u-md-1-3">
+        Original: <a href="{{ dict_keys[key] }}">{{ dict_keys[key] }}</a><br>
+        Your key: <a href="/{{ key }}">{{ key }}</a><br>
+    </div>
+
+    <div class="pure-u-1">
+        <p>Got more links you need to sweeten up?</p><br>
+        <a class="pure-button redo" href="/">Gimme some sugar!</a>
+    </div>
+{% endblock %}

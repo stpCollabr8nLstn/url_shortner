@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <div class="head pure-u-1">
+        <h1>Short 'n Sweet</h1>
+    </div>
+
+    <div class="pure-u-1">
+        <h3>Got a link that's too long? We're here to help!</h3>
+        <p>Enter your link and we'll make it short 'n sweet:</p>
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-3">
+        <form method="POST" action="/shorten" class="pure-form">
+            <fieldset>
+                <input type="text" class="pure-input-rounded" name="url" placeholder="Enter URL" required>
+                <input type="submit" class="pure-button" value="Shorten!">
+            </fieldset>
+        </form>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}ERROR 404{% endblock %}
+{% block content %}
+    <div class="pure-u-1">
+        <h2>Oops! Looks like you're lost.</h2>
+    </div>
+
+    <div class="container404 pure-u-1">
+    <img src="http://static.tvtropes.org/pmwiki/pub/images/funny_cat_pictures_344_1846.jpg"><br><br>
+    </div>
+
+    <div class="pure-u-1">
+    <button class="pure-button" onclick="goBack()">Return to Safety</button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </div>
+{% endblock %}
